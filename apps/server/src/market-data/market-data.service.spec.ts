@@ -2,6 +2,7 @@ import { HttpModule } from '@nestjs/axios';
 import { ConfigModule } from '@nestjs/config';
 import { Test, TestingModule } from '@nestjs/testing';
 import { MarketDataService } from './market-data.service';
+import { MarketApiQueryDTO, MarketDataQueryDTO } from 'shared/schema';
 
 describe('MarketDataService', () => {
   let service: MarketDataService;

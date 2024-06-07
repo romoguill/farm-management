@@ -1,6 +1,14 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { MarketDataQueryDTO } from '@server/common/schemasDTO';
+import {
+  MarketApiQueryDTO,
+  currencySchema,
+  derivativeSchema,
+  grainSchema,
+  marketPlaceSchema,
+} from 'shared/schema';
 
 @Injectable()
 export class MarketDataService {

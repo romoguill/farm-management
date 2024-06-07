@@ -1,5 +1,5 @@
 import { initContract } from '@ts-rest/core';
-import { MarketData, marketQuerySchema } from 'shared/types';
+import { MarketData, marketQuerySchema } from 'shared/schema';
 
 const c = initContract();
 
